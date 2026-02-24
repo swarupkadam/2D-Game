@@ -1,4 +1,4 @@
-# Adventure Time Project
+ï»¿# Adventure Time Project
 
 A Java-based 2D top-down action RPG built with Swing/AWT.  
 This project features tile-based world exploration, combat, NPC interaction, trading, inventory/equipment, projectiles, map transitions, save/load, and a day-night lighting cycle.
@@ -12,17 +12,18 @@ This project features tile-based world exploration, combat, NPC interaction, tra
 
 ```text
 Adventure_time-project/
++-- Adventure Time.exe      # Windows executable (run directly)
 +-- 2D Game/
     +-- src/                # Java source code
-    ¦   +-- main/           # Game loop, input, UI, bootstrapping
-    ¦   +-- entity/         # Player, NPCs, base entity logic
-    ¦   +-- monster/        # Enemy implementations
-    ¦   +-- object/         # Weapons, consumables, keys, chests, etc.
-    ¦   +-- tile/           # Tile system, map rendering, minimap
-    ¦   +-- tile_interactive/ # Breakable/interactable world tiles
-    ¦   +-- environment/    # Lighting and day-night system
-    ¦   +-- ai/             # Pathfinding (A*)
-    ¦   +-- data/           # Save/load serialization
+    |   +-- main/           # Game loop, input, UI, bootstrapping
+    |   +-- entity/         # Player, NPCs, base entity logic
+    |   +-- monster/        # Enemy implementations
+    |   +-- object/         # Weapons, consumables, keys, chests, etc.
+    |   +-- tile/           # Tile system, map rendering, minimap
+    |   +-- tile_interactive/ # Breakable/interactable world tiles
+    |   +-- environment/    # Lighting and day-night system
+    |   +-- ai/             # Pathfinding (A*)
+    |   +-- data/           # Save/load serialization
     +-- res/                # Runtime resources (maps, sprites, sound, fonts)
     +-- bin/                # Compiled classes + copied assets
     +-- config.txt          # Runtime config (fullscreen/music/sfx)
@@ -107,14 +108,21 @@ Adventure_time-project/
 
 ## How to Run
 
-### Option 1: Run compiled output
+### Option 1: Run the executable (Windows)
+From the project root:
+
+```powershell
+.\Adventure Time.exe
+```
+
+### Option 2: Run compiled output
 From `2D Game`:
 
 ```powershell
 java -cp bin main.Main
 ```
 
-### Option 2: Compile then run
+### Option 3: Compile then run
 From `2D Game`:
 
 ```powershell
@@ -123,7 +131,7 @@ java -cp bin main.Main
 ```
 
 ## Notes
-- This repository currently includes both source (`src`) and compiled output (`bin`).
+- This repository includes source (`src`), compiled output (`bin`), and a Windows executable (`Adventure Time.exe`).
 - `config.txt` and `save.dat` are runtime-generated/updated files.
 - Assets are loaded from classpath resource folders (maps, sprites, sounds, fonts).
 
