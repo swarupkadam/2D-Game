@@ -135,6 +135,3 @@ java -cp bin main.Main
 - `config.txt` and `save.dat` are runtime-generated/updated files.
 - Assets are loaded from classpath resource folders (maps, sprites, sounds, fonts).
 
-## Credits
-- Project title: Adventure Time
-- Author credit shown in-game: Swarup
