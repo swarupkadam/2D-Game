@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Adventure Time - Java RPG</title>
+<title>Adventure Time – 2D RPG</title>
 
 <style>
 
 body{
-background:#0f172a;
-color:white;
-font-family:Arial;
-text-align:center;
-padding:50px;
+background:#f3f3f3;
+font-family:system-ui;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.card{
+background:white;
+border:3px solid black;
+width:500px;
+padding:40px;
+box-shadow:10px 10px 0px black;
 }
 
 h1{
-font-size:48px;
-margin-bottom:10px;
+font-size:28px;
+margin-bottom:15px;
 }
 
 p{
-font-size:18px;
-color:#cbd5e1;
+color:#444;
+line-height:1.5;
 }
 
-.download-btn{
+.tags{
+margin-top:20px;
+}
+
+.tag{
 display:inline-block;
+border:1px solid #ccc;
+padding:4px 10px;
+margin:4px;
+border-radius:20px;
+font-size:12px;
+background:#eee;
+}
+
+.buttons{
 margin-top:30px;
-padding:20px 40px;
-font-size:22px;
-background:#22c55e;
-color:white;
+display:flex;
+gap:15px;
+}
+
+.btn{
+border:3px solid black;
+padding:12px 20px;
 text-decoration:none;
-border-radius:10px;
-transition:0.3s;
+color:black;
+font-weight:bold;
+background:white;
+box-shadow:5px 5px 0px black;
 }
 
-.download-btn:hover{
-background:#16a34a;
-transform:scale(1.05);
-}
-
-.container{
-max-width:800px;
-margin:auto;
+.btn:hover{
+transform:translate(2px,2px);
+box-shadow:3px 3px 0px black;
 }
 
 </style>
@@ -51,23 +73,35 @@ margin:auto;
 
 <body>
 
-<div class="container">
+<div class="card">
 
-<h1>Adventure Time</h1>
+<h1>Adventure Time – 2D RPG Game</h1>
 
 <p>
-A Java-based 2D top-down RPG built with Swing/AWT.  
-Explore a tile-based world, fight enemies, interact with NPCs,
-trade items, and experience a dynamic day-night cycle.
+A Java-based 2D top-down action RPG featuring tile exploration,
+NPC interaction, trading, combat mechanics, inventory system,
+and enemy AI with A* pathfinding.
 </p>
 
-<a class="download-btn" href="Adventure%20Time.exe" download>
-⬇ Download Game
+<div class="tags">
+<span class="tag">Java</span>
+<span class="tag">Swing</span>
+<span class="tag">AWT</span>
+<span class="tag">Game Development</span>
+<span class="tag">A* Pathfinding</span>
+</div>
+
+<div class="buttons">
+
+<a class="btn" href="https://github.com/swarupkadam/2D-Game">
+SOURCE
 </a>
 
-<p style="margin-top:40px;font-size:14px;">
-Developed by Swarup Kadam
-</p>
+<a class="btn" href="Adventure%20Time.exe" download>
+DOWNLOAD GAME
+</a>
+
+</div>
 
 </div>
 
