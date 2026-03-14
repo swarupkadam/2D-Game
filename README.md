@@ -108,6 +108,9 @@ Adventure_time-project/
 
 ## How to Run
 
+### Option 0: Open the download landing page
+Open `index.html` in a browser to view the project landing page and download the Windows executable.
+
 ### Option 1: Run the executable (Windows)
 From the project root:
 
@@ -132,6 +135,6 @@ java -cp bin main.Main
 
 ## Notes
 - This repository includes source (`src`), compiled output (`bin`), and a Windows executable (`Adventure Time.exe`).
+- `index.html` provides a simple download page that links to the executable.
 - `config.txt` and `save.dat` are runtime-generated/updated files.
 - Assets are loaded from classpath resource folders (maps, sprites, sounds, fonts).
-
